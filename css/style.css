@@ -1,0 +1,617 @@
+/* Länkar in teckensnitt */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+/* HELA DOKUMENTET */
+/* Reglerar alla boxar till border-box */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Regler för hela webbsidan */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 20px;
+    background-color: #f6f3e8;
+}
+
+/* Regler för alla länkar */
+a {
+    color: #f6f3e8;
+    text-decoration: none;
+}
+
+/* Regler för alla länkar i section och med klass */
+section a,
+p a {
+    color: #8e5d13;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+
+/* HEADER */
+/* Regler för sidhuvud */
+header {
+    height: fit-content;
+    width: 100%;
+    padding: 10px 10px 10px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e2503;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Logotyp */
+header h1 a {
+    font-family: 'Rouge Script', 'Montserrat', Arial, sans-serif;
+    font-size: 36px;
+    color: #f6f3e8;
+}
+
+
+/* NAVIGERING */
+/* Öppna meny-knapp */
+#open-menu-btn {
+    background-color: #3e2503;
+    border-radius: 3px;
+    border: none;
+    color: #f6f3e8;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    transition: 0.3s;
+}
+
+#open-menu-btn:hover {
+    background-color: #8e5d13;
+    cursor: pointer;
+}
+
+/* Öppna meny-ikonen */
+.fa-bars {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/* Navigerinsmeny */
+header nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #3e2503;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    display: none;
+    z-index: 1;
+}
+
+/* Stäng meny-knapp */
+#close-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3e2503;
+    border: none;
+    color: #f6f3e8;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    transition: 0.3s;
+}
+
+#close-menu-btn:hover {
+    background-color: #8e5d13;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Stäng meny-ikonen */
+.fa-xmark {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/* Navigeringslänkarna */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 60px;
+}
+
+header nav li {
+    width: 85%;
+    margin: auto;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav a {
+    display: block;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header nav li:hover {
+    background-color: #8e5d13;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+/* Huvudinnehåll */
+main {
+    padding: 20px;
+}
+
+h2 {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #8e5d13;
+}
+
+section {
+    margin: 10px 0;
+    color: #3e2503;
+}
+
+.posts {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 16px;
+    border-radius: 3px;
+    border: 1px solid #c3c3c3;
+}
+
+h3 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3e2503;
+}
+
+p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #3e2503;
+}
+
+/* För font-weight 500 */
+.fivehundred {
+    font-weight: 500;
+    color: #3e2503;
+}
+
+/* För font-weight 500 och textfärg röd */
+.redfivehundred {
+    font-weight: 500;
+    color: rgb(202, 0, 0);
+}
+
+/* För font-weight 500 och textfärg grön */
+.greenfivehundred {
+    font-weight: 500;
+    color: rgb(0, 112, 2);
+}
+
+/* Regler för punktlistor */
+.bullets {
+    padding-left: 22px;
+}
+
+.bullets li {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 0 10px 5px;
+}
+
+.bullets li a {
+    color: #8e5d13;
+    text-decoration: underline;
+}
+
+/* Regler för label */
+.item label {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Regler för inputfält */
+.item input[type=text],
+.item input[type=number],
+.item input[type=password],
+.item textarea {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    border: 1px solid #c3c3c3;
+    border-radius: 2px;
+}
+
+.item input[type=text]:focus,
+.item input[type=number]:focus,
+.item input[type=password]:focus,
+.item textarea:focus {
+    outline-color: #8e5d13;
+}
+
+.item input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 1px;
+}
+
+.item input[type=checkbox]:focus {
+    cursor: pointer;
+}
+
+.right {
+    float: right;
+    justify-content: flex-end;
+}
+
+/* Regler för knappar */
+input[type=submit],
+.returnBtn {
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #f6f3e8;
+    background-color: #8e5d13;
+    border-radius: 3px;
+    border: 2px solid #3e2503;
+    box-shadow: 0 0 10px #3e2503 inset, 0 0 2px #3e2503 inset;
+    text-shadow: 0 0 10px #3e2503, 0 0 6px #3e2503, 0 0 4px #3e2503;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover,
+.returnBtn:hover {
+    background-color: #3e2503;
+    cursor: pointer;
+}
+
+.changeBtn,
+.deleteBtn {
+    text-decoration: none;
+    padding: 8px 14px;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #f6f3e8;
+    background-color: #8e5d13;
+    border-radius: 3px;
+    border: 2px solid #3e2503;
+    box-shadow: 0 0 10px #3e2503 inset, 0 0 2px #3e2503 inset;
+    text-shadow: 0 0 10px #3e2503, 0 0 6px #3e2503, 0 0 4px #3e2503;
+    transition: 0.3s;
+}
+
+.postLinks {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.changeBtn:hover,
+.deleteBtn:hover {
+    background-color: #3e2503;
+    cursor: pointer;
+}
+
+/* Regler för postat */
+.light {
+    color: #8e5d13;
+    font-weight: 500;
+}
+
+
+/* FOOTER */
+/* Positionerar sidornas innehåll för att footern ska stanna längst ner */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Lägger till padding för att sidornas innehåll inte ska hamna bakom footern */
+#content-wrap {
+    padding-bottom: 50px;
+}
+
+/* Footer-boxen */
+footer {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px;
+}
+
+/* Footer-text */
+footer li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3e2503;
+    list-style-type: none;
+    border-top: 2px solid #8e5d13;
+    padding: 20px 0;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Skärmar med minsta bredd 900px */
+@media only screen and (min-width: 850px) {
+
+
+    /* HEADER */
+    /* Regler för sidhuvud */
+    header {
+        width: 66%;
+        max-width: 900px;
+        padding-top: 50px;
+        margin-left: 280px;
+        background-color: #f6f3e8;
+        box-shadow: none;
+    }
+
+    /* Logotyp */
+    header h1 a {
+        font-size: 100px;
+        color: #3e2503;
+        text-shadow: 10px 5px 5px #3e250365;
+    }
+
+
+    /* NAVIGERING */
+    /* Döljer hamburgermenyknappar */
+    #open-menu-btn,
+    #close-menu-btn {
+        display: none !important;
+    }
+
+    /* Navigeringslänkar blir synliga och positioneras till vänster */
+    header nav {
+        display: block !important;
+        position: fixed;
+        left: 0;
+        height: 100vh;
+        width: 260px;
+        box-shadow: 3px 0 10px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Navigeringslänkarna */
+    header nav ul {
+        padding-top: 20px;
+    }
+
+    header nav li {
+        font-size: 16px;
+        width: fit-content;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    header nav a {
+        margin-bottom: 20px;
+    }
+
+
+    /* MAIN */
+    /* Huvudinnehåll positioneras */
+    main {
+        margin-left: 280px;
+        margin-top: 20px;
+        width: 66%;
+        max-width: 900px;
+    }
+
+    h2 {
+        padding-top: 30px;
+        font-size: 32px;
+        border-top: 2px solid #8e5d13;
+    }
+
+    .minusBorder {
+        border-top: none;
+    }
+
+    section {
+        margin: 20px 0;
+    }
+
+    h3 {
+        font-size: 21px;
+        font-weight: 700;
+        padding-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    /* Regler för punktlistor */
+    .bullets {
+        padding-left: 24px;
+    }
+
+    .bullets li {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 0 10px 5px;
+    }
+
+    /* Regler för label */
+    .item label {
+        font-size: 16px;
+    }
+
+    /* Regler för inputfält */
+    .item input[type=text],
+    .item input[type=number],
+    .item input[type=password],
+    .item textarea {
+        font-size: 16px;
+    }
+
+
+    /* FOOTER */
+    /* Footer-boxen positioneras annorlunda pga konflikt med navigeringen */
+    footer {
+        width: 66%;
+        max-width: 900px;
+        left: 280px;
+    }
+
+    footer li {
+        border-top: 2px solid #8e5d13;
+        padding: 20px 0;
+    }
+}
+
+
+/* Skärmar med minsta bredd 1500px */
+@media only screen and (min-width: 1500px) {
+
+    /* Förflyttar allt innehåll lite till höger */
+    header,
+    main {
+        margin-left: 510px;
+    }
+
+    footer {
+        left: 510px;
+    }
+
+    /* Justerar navigeringsmenyn */
+    header nav {
+        width: 460px;
+    }
+
+    header nav ul {
+        padding-top: 46px;
+    }
+
+    header nav li {
+        margin-right: 50px;
+    }
+}
+
+
+/* Skärmar med minsta bredd 2000px */
+@media only screen and (min-width: 2000px) {
+
+    /* Regler för sidhuvud */
+    header {
+        padding-top: 70px;
+        padding-bottom: 25px;
+        margin-left: 800px;
+    }
+
+    /* Logotyp */
+    header h1 a {
+        font-size: 120px;
+    }
+
+    /* Justerar navigeringsmenyn */
+    header nav {
+        width: 700px;
+    }
+
+    header nav ul {
+        padding-top: 90px;
+    }
+
+    header nav li {
+        margin-right: 100px;
+        font-size: 24px;
+    }
+
+    header nav a {
+        padding: 30px 40px;
+        margin-bottom: 50px;
+    }
+
+    /* Regler för huvudinnehåll */
+    main {
+        margin-left: 800px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    section {
+        margin: 20px 0;
+    }
+
+    .posts {
+        padding: 30px;
+        padding-bottom: 26px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    /* Regler för punktlistor */
+    .bullets li {
+        font-size: 18px;
+    }
+
+    /* Regler för label */
+    .item label {
+        font-size: 18px;
+    }
+
+    /* Regler för inputfält */
+    .item input[type=text],
+    .item input[type=number],
+    .item input[type=password],
+    .item textarea {
+        font-size: 18px;
+    }
+
+    /* Regler för footer */
+    footer {
+        left: 800px;
+    }
+}
