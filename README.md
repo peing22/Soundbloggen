@@ -1,4 +1,4 @@
-# DT093G Projekt
+# Soundbloggen
 Mitt projektarbete i kursen *DT093G - Webbutveckling II* handlar om att skapa en webbplats utformad som en bloggportal. Webbplatsen är implementaterad med ett objektorienterat synsätt och utarbetad med inriktning mot en 
 * vald målgrupp
 * vald grafisk profil
